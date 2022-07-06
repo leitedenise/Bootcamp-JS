@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br" charset="utf-8">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Introdução ao Curso de HTML</title>
+
+        <link rel="stylesheet" href="style.css"> <!--inserindo o arquivo de estilo css, criado fora do html.-->
+        <!--o rel mostra o tipo de arquivo está sendo add, e o href aponta pro endereço do arquivo.-->
+
+
+    </head>
+    <body>
+        <header>
+
+            <!--adiciona uma classe à imagem do topo para receber a formatação do css para essa imagem-->
+            <img src="imagens\foto.jpg" alt="Foto de Denise" class="topo-image"> <!--caminho da imagem adicionada antes do título da pagina-->
+
+            <!--para definir os elementos que serao modificados pelos estilos que serao criados no css, coloca-se id para que ele nao se repita-->
+            <h1 id="tittle">Denise Leite</h1> <!--Título da página-->
+
+        </header> <!--Cabeçalho da pagina.-->
+
+        <section>
+
+            <header>
+                
+                <!--para definir os elementos que serao modificados pelos estilos que serao criados no css, no h2 coloca-se como subtittle, usando class, que podem existir mais de uma-->
+                <h2 class="subtittle">Minha Página Pessoal</h2><!--Título de seção-->
+
+            </header><!-- cabeçalho da seção-->
+
+            <!--adiciona-se a classe post ao article para receber a formatação equivalente à postagem, la do arquivo css. O que for do bloco de postagem recebe essa formatacao especifica.-->
+            <article class="post">
+
+                <header>
+
+                    <!--para definir os elementos que serao modificados pelos estilos que serao criados no css, no titulo da postagem coloca-se post_tittle-->
+                    <h3 class="post_tittle">Apresentação</h3><!--Título artigo/conteúdo-->
+
+                    <!--o post_image, recebe a formatação na area da imagem da postagem-->
+                    <img src="imagens/programacao.jpg" alt="Imagem de código de programação" class="post_image"> <!--caminho da imagem adicionada apos o título do post-->
+
+                </header> <!--cabeçalho do primeiro conteudo dessa seção-->
+
+                <!-- recebe no post_content, a formatação do conteudo, vindo do arquivo css-->
+                <p class="post_content">
+                    Estudante de Análise e Desenvolvimento de Sistemas. 
+                    Programação em PHP, Python, MySQL, JS.<br>
+
+                    <br>Portífólio: <br>
+
+                    <a href="https://github.com/leitedenise"
+                    target="_blank">GitHub</a> <!--link github-->
+
+                                        
+                </p>
+
+            </article> <!--conteudo referente à essa seção da pagina-->
+
+        </section> <!--Uma seção da pagina-->
+
+        <footer>
+
+            <!--contact_list recebe a formatação na lista de contatos.-->
+            <ul class="contact_list">
+
+                <li>
+                    <a href="mailto: denise_lds@hotmail.com">denise_lds@hotmail.com</a> <!--email-->
+
+                </li> <!--cada item da lista-->
+
+                <li>
+                    <a href="https://www.linkedin.com/in/denise-leite-dos-santos-807851210/"target="_blank">Linkedin</a> <!--linkedin-->
+
+                </li>
+
+                <li>
+                    <a href="https://github.com/leitedenise"
+                    target="_blank">GitHub</a> <!--github-->
+
+                </li>
+
+            </ul> <!--lista de contatos do rodapé-->
+
+        </footer> <!--Rodapé da pagina-->
+        
+
+    </body>
+</html>
