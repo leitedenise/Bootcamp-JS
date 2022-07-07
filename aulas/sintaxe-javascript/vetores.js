@@ -28,20 +28,12 @@ unshift()- adiciona um item no inicio do array.
 
 indexOf()- retorna o índice de um valor no array.
 
-for() - anda pela lista. for([expressaoInicial]; [condicao];[incremento]){
-    declaração;
-}
-
 splice()- remove ou substitui um item atraves do indice.
 
 slice()- retorna uma parte de um array existente.
 
 */
 var valor;
-
-for (i = 0; i <= 10; i ++){
-    console.log(i);
-}
 
 var cores = ['Verde', 'Vermelho', 'Azul'];
 //a função mostra os itens que forem passados dessa lista no forEach.
