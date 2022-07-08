@@ -1,3 +1,4 @@
+/*
 function comparaNumeros(n1, n2){
     const frase1 = criaFrase1(n1, n2);
     const frase2 = criaFrase2(n1, n2);
@@ -38,3 +39,42 @@ function criaFrase2(n1, n2){
 }
 
 console.log(comparaNumeros(1,2));
+*/
+
+function comparaNumeros(n1, n2){
+    let soma = n1 + n2;
+    let iguais = '';
+    let resul10 = '';
+    let resul20 = '';
+
+    if (n1 === n2 ){
+        iguais = 'são iguais.';
+
+    } else{
+        iguais = 'não são iguais.';
+    }
+
+    if (soma > 10){
+        resul10 = 'que é maior que 10 '
+
+    } else{
+
+        resul10 = 'que é menor que 10 '
+
+    } 
+
+    if (soma > 20){
+        resul20 = 'e maior que 20.'
+
+    } else{
+        resul20 = 'e menor que 20.'
+    }
+
+    return alert(`Os números ${iguais} Sua soma é ${soma}, ${resul10} ${resul20}`)
+}
+
+var a = Number(prompt('Informe o primeiro número: '));
+var b = Number(prompt('Informe o segundo número: '));
+
+comparaNumeros(a, b);
+
